@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class Solution {
+    public int solution(int n) {
+        int answer = (n/100)+((n%100)/10)+((n%100)%10);
+        
+        
+        return answer;
+    }
+}
