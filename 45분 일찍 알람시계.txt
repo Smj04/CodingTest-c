@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main() {
+	int H;
+	int M;
+	printf("시, 분 입력(45분 일찍 울림) : ");
+	scanf("%d", & H);
+	scanf("%d", & M);
+
+	if(H==0){ //자정이고
+		if(M < 45){ // 분이 45분 미만이면
+			H = 23; //시는 23
+			M = M + 60 - 45; //분은 60분 - 45분
+			printf("%d %d", H, M);
+		}
+
+	}
+	else if(H > 0){ //자정이 아닐때와
+		if (M < 45) {// 분이 45분 미만이면
+			H = H - 1; M = M + 60 - 45; //시는 시-1 분은 60분-45분
+			printf("%d %d", H, M);
+		}
+		else if (H > 0) { 
+			M - 45; 
+			printf("%d %d", H, M);
+		}
+	}
+	
+	
+	return 0;
+}
