@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+	int year=0;
+	int yun = 0;
+	printf("연도 입력 : ");
+	scanf_s("%d", &year);
+	if (year % 4 == 0 && !year % 100 == 0) {
+		yun++;
+	}
+	printf("%d\n", yun);
+	return 0;
+}
