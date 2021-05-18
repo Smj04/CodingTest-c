@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n = 0;
+	char arr[80];
+	cout << "수 입력: ";
+	cin >> n;
+	int sum = 0, add = 0;
+
+	for (int i = 1; i <= n; i++) {
+		cin >> n;
+		
+		for (int  j = 0; j < sizeof(arr) / sizeof(char); j++) {
+			if (arr[j] == 'O') {
+				sum += add;
+				add++;
+			}
+			else
+				add = 1;
+				
+		}
+		cout << sum;
+	}
+	
+	return 0;
+}
