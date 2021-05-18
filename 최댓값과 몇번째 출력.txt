@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	int arr[9];
+	cout << "9개의 정수 입력 : ";
+	
+	
+	int max = 0;
+	int max_index = 0;
+	 
+	for (int i = 0; i < sizeof(arr) / sizeof(int); i++) {
+		cin >> arr[i];
+		if(max<arr[i])
+		max = arr[i];
+		max_index = i;
+	}
+	cout << max << endl;
+	cout << max_index << endl;
+	return 0;
+}
